@@ -11,7 +11,8 @@ async function getToken() {
 }
 
 function logout() {
-  keycloak.logout({ redirectUri: window.location.origin + '/' })
+  // BASE_URL is Vite's `base` ("/" or e.g. "/dashboard/"), so a sub-site deployment returns to itself.
+  keycloak.logout({ redirectUri: window.location.origin + import.meta.env.BASE_URL })
 }
 
 function switchAccount() {
