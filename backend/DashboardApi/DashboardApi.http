@@ -1,0 +1,38 @@
+@DashboardApi_HostAddress = http://localhost:5105
+# Paste an access token from the browser (Network tab → Authorization header) to try these.
+@token = PASTE_ACCESS_TOKEN
+
+GET {{DashboardApi_HostAddress}}/api/me
+Authorization: Bearer {{token}}
+
+###
+
+GET {{DashboardApi_HostAddress}}/api/dashboard/kpis
+Authorization: Bearer {{token}}
+
+###
+
+GET {{DashboardApi_HostAddress}}/api/dashboard/sales
+Authorization: Bearer {{token}}
+
+###
+
+GET {{DashboardApi_HostAddress}}/api/dashboard/goal
+Authorization: Bearer {{token}}
+
+###
+
+GET {{DashboardApi_HostAddress}}/api/dashboard/traffic
+Authorization: Bearer {{token}}
+
+###
+
+GET {{DashboardApi_HostAddress}}/api/dashboard/performance
+Authorization: Bearer {{token}}
+
+###
+
+GET {{DashboardApi_HostAddress}}/api/dashboard/attendance
+Authorization: Bearer {{token}}
+
+###

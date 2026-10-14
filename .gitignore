@@ -1,0 +1,10 @@
+# .NET build output and IDE state
+bin/
+obj/
+.vs/
+*.user
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
